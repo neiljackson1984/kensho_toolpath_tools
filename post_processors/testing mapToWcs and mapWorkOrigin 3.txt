@@ -1,0 +1,124 @@
+excerpt from g-code file generated with several different settings of mapWorkOrigin and mapToWCS.
+For this experiment, the work frame origin was at (-10,0,0) and the section frame was at (0,-10,0).
+
+
+
+
+======= TRIAL 1 ===================================================================================
+G1 X+02.1087 Y+08.9886 Z-00.3605                                        F0001598.76
+;  
+;  mapToWCS: false
+;  mapWorkOrigin: false
+;  currentSection.getGlobalWorkOrigin(): (0, -10, 0)
+;  motion handler: onLinear
+;  getMovementStringId(movement): cutting
+;       coordinatesOfSource: X+02.1087 Y+08.9886 Z-00.3605 A+0000000.000 B+0000000.000 C+0000000.000
+;  coordinatesOfDestination: X+02.1076 Y+08.9939 Z-00.3851 A+0000000.000 B+0000000.000 C+0000000.000
+;  	getCurrentRecordId(): 718
+;  getRotation():(identity)
+;  getTranslation():(zero)
+;  getCurrentGlobalPosition():(2.10869, -1.01142, -0.360519)
+;  getCurrentPosition():(2.10869, 8.98858, -0.360519)
+;  getMachineConfiguration().getPosition( getCurrentPosition(),   getCurrentDirection()   ):(2.10869, 8.98858, -0.360519)
+;  getMachineConfiguration().getPosition( new Vector(coordinatesOfSource.slice(0,3)), new Vector(coordinatesOfSource.slice(3,6))   ):(2.10869, 8.98858, -0.360519)
+;  getCurrentDirection():(0, 0, 1)
+;  getMachineConfiguration().getDirection( getCurrentDirection()): (0, 0, 1)
+;  getMachineConfiguration().getDirection(  new Vector(coordinatesOfSource.slice(3,6))   ):(0, 0, 1)
+;  feedrate: 040.0
+;  duration: 0.0006290067644663323
+;  startPosition: (2.10869, 8.98858, -0.360519)
+;  endPosition: (2.10757, 8.9939, -0.385086)
+;  getLength() : 0.02516027057865335
+;  distance    : 0.025160270578653294
+G1 X+02.1076 Y+08.9939 Z-00.3851                                        F0001589.81
+
+
+======= TRIAL 2 ===================================================================================
+G1 X+02.1087 Y+08.9886 Z-00.3605                                        F0001598.76
+;  
+;  mapToWCS: true
+;  mapWorkOrigin: false
+;  currentSection.getGlobalWorkOrigin(): (10, -10, 0)
+;  motion handler: onLinear
+;  getMovementStringId(movement): cutting
+;       coordinatesOfSource: X+02.1087 Y+08.9886 Z-00.3605 A+0000000.000 B+0000000.000 C+0000000.000
+;  coordinatesOfDestination: X+02.1076 Y+08.9939 Z-00.3851 A+0000000.000 B+0000000.000 C+0000000.000
+;  	getCurrentRecordId(): 718
+;  getRotation():(identity)
+;  getTranslation():(zero)
+;  getCurrentGlobalPosition():(12.1087, -1.01142, -0.360519)
+;  getCurrentPosition():(2.10869, 8.98858, -0.360519)
+;  getMachineConfiguration().getPosition( getCurrentPosition(),   getCurrentDirection()   ):(2.10869, 8.98858, -0.360519)
+;  getMachineConfiguration().getPosition( new Vector(coordinatesOfSource.slice(0,3)), new Vector(coordinatesOfSource.slice(3,6))   ):(2.10869, 8.98858, -0.360519)
+;  getCurrentDirection():(0, 0, 1)
+;  getMachineConfiguration().getDirection( getCurrentDirection()): (0, 0, 1)
+;  getMachineConfiguration().getDirection(  new Vector(coordinatesOfSource.slice(3,6))   ):(0, 0, 1)
+;  feedrate: 040.0
+;  duration: 0.0006290067644663323
+;  startPosition: (2.10869, 8.98858, -0.360519)
+;  endPosition: (2.10757, 8.9939, -0.385086)
+;  getLength() : 0.02516027057865335
+;  distance    : 0.025160270578653294
+G1 X+02.1076 Y+08.9939 Z-00.3851                                        F0001589.81
+;  
+ 
+
+
+======= TRIAL 3 ===================================================================================
+G1 X+02.1087 Y-01.0114 Z-00.3605                                        F0001598.76
+;  
+;  mapToWCS: false
+;  mapWorkOrigin: true
+;  currentSection.getGlobalWorkOrigin(): (0, 0, 0)
+;  motion handler: onLinear
+;  getMovementStringId(movement): cutting
+;       coordinatesOfSource: X+02.1087 Y-01.0114 Z-00.3605 A+0000000.000 B+0000000.000 C+0000000.000
+;  coordinatesOfDestination: X+02.1076 Y-01.0061 Z-00.3851 A+0000000.000 B+0000000.000 C+0000000.000
+;  	getCurrentRecordId(): 718
+;  getRotation():(identity)
+;  getTranslation():(zero)
+;  getCurrentGlobalPosition():(2.10869, -1.01142, -0.360519)
+;  getCurrentPosition():(2.10869, -1.01142, -0.360519)
+;  getMachineConfiguration().getPosition( getCurrentPosition(),   getCurrentDirection()   ):(2.10869, -1.01142, -0.360519)
+;  getMachineConfiguration().getPosition( new Vector(coordinatesOfSource.slice(0,3)), new Vector(coordinatesOfSource.slice(3,6))   ):(2.10869, -1.01142, -0.360519)
+;  getCurrentDirection():(0, 0, 1)
+;  getMachineConfiguration().getDirection( getCurrentDirection()): (0, 0, 1)
+;  getMachineConfiguration().getDirection(  new Vector(coordinatesOfSource.slice(3,6))   ):(0, 0, 1)
+;  feedrate: 040.0
+;  duration: 0.0006290067644663323
+;  startPosition: (2.10869, -1.01142, -0.360519)
+;  endPosition: (2.10757, -1.0061, -0.385086)
+;  getLength() : 0.02516027057865335
+;  distance    : 0.025160270578653294
+G1 X+02.1076 Y-01.0061 Z-00.3851                                        F0001589.81
+ 
+
+
+======= TRIAL 4 ===================================================================================
+G1 X+12.1087 Y-01.0114 Z-00.3605                                        F0001598.76
+;  
+;  mapToWCS: true
+;  mapWorkOrigin: true
+;  currentSection.getGlobalWorkOrigin(): (0, 0, 0)
+;  motion handler: onLinear
+;  getMovementStringId(movement): cutting
+;       coordinatesOfSource: X+12.1087 Y-01.0114 Z-00.3605 A+0000000.000 B+0000000.000 C+0000000.000
+;  coordinatesOfDestination: X+12.1076 Y-01.0061 Z-00.3851 A+0000000.000 B+0000000.000 C+0000000.000
+;  	getCurrentRecordId(): 718
+;  getRotation():(identity)
+;  getTranslation():(zero)
+;  getCurrentGlobalPosition():(12.1087, -1.01142, -0.360519)
+;  getCurrentPosition():(12.1087, -1.01142, -0.360519)
+;  getMachineConfiguration().getPosition( getCurrentPosition(),   getCurrentDirection()   ):(12.1087, -1.01142, -0.360519)
+;  getMachineConfiguration().getPosition( new Vector(coordinatesOfSource.slice(0,3)), new Vector(coordinatesOfSource.slice(3,6))   ):(12.1087, -1.01142, -0.360519)
+;  getCurrentDirection():(0, 0, 1)
+;  getMachineConfiguration().getDirection( getCurrentDirection()): (0, 0, 1)
+;  getMachineConfiguration().getDirection(  new Vector(coordinatesOfSource.slice(3,6))   ):(0, 0, 1)
+;  feedrate: 040.0
+;  duration: 0.0006290067644663333
+;  startPosition: (12.1087, -1.01142, -0.360519)
+;  endPosition: (12.1076, -1.0061, -0.385086)
+;  getLength() : 0.02516027057865335
+;  distance    : 0.025160270578653332
+G1 X+12.1076 Y-01.0061 Z-00.3851                                        F0001589.81
+;  

@@ -1,0 +1,13 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"addin",
+	"id":	"aef1a5df-1292-45b5-a562-3771a54d0213",
+	"author":	"Neil",
+	"description":	{
+		"":	"Dumps user parameters to a file, ready for any post-processing scripts to digest, then invokes Neil's preferred post processor (would prefer to invoke the post processor referenced in the document, but there does not appear to be any api exposure of the \"nc program\" object."
+	},
+	"version":	"",
+	"runOnStartup":	true,
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
